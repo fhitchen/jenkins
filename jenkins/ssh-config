@@ -1,0 +1,11 @@
+Host *
+   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null
+
+Host *.bitbucket.org
+   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null
+
+Host bitbucket.org
+   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null

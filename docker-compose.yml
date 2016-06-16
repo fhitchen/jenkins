@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  jenkins:
+    build: jenkins
+    ports:
+      - "9080:8080"
