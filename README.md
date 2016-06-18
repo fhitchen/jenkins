@@ -33,7 +33,7 @@ docker-compose up
 
 ## Run the seed job.
 
-* Login into jenkins http://localhost:9080 or try http://192.168.99.100:8080
+* Login into jenkins http://localhost:9080 or try http://192.168.99.100:9080
 * Admin credentials are username: andy, password: admin
 * Run the seed job, the pipelines will be built, and integrations will start.
 
