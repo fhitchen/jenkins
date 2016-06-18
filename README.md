@@ -1,4 +1,4 @@
-# Boise Devops 2016: Jenkins CICD demostration
+# **Boise Devops 2016: Jenkins CICD demostration**
 
 # The Demo
 
@@ -25,7 +25,7 @@
 #!bash
 git clone https://bitbucket.org/boise_devops_2016/jenkins.git
 ```
-* Build and run jenkins
+* Build and run jenkins, use the Docker Quickstart Terminal, note the IP address if running on Windows/Mac
 ```
 #!bash
 docker-compose up
@@ -33,7 +33,7 @@ docker-compose up
 
 ## Run the seed job.
 
-* Login into jenkins http://localhost:9080
+* Login into jenkins http://localhost:9080 or try http:192.168.99.100:8080
 * Admin credentials are username: andy, password: admin
 * Run the seed job, the pipelines will be built, and integrations will start.
 
