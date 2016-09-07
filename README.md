@@ -20,10 +20,10 @@
 * Install docker and docker-compose
 
 ### Mac/Windows/Linux Steps
-* git clone https://bitbucket.org/boise_devops_2016/jenkins.git
+* git clone https://github.com/fhitchen/jenkins.git
 ```
 #!bash
-git clone https://bitbucket.org/boise_devops_2016/jenkins.git
+git clone https://github.com/fhitchen/jenkins.git
 ```
 * Build and run jenkins, use the Docker Quickstart Terminal, note the IP address if running on Windows/Mac
 ```
