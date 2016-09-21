@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  jenkins:
+    build: 
+      context: ./jenkins
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
+    ports:
+      - "9080:8080"
+    #volumes:
+    #  - jenkins_home:/var/jenkins_home
+    volumes_from:
+      - jenkins-data
+  jenkins-data:
+    extends:
+      file: volume.yml
+      service: data
+    volumes:
+      - /var/jenkins_home

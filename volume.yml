@@ -1,0 +1,9 @@
+version: "2"
+services:
+  data:
+    #image: alipne@sha256:f655166f57d91bdfc8b3bc75a20391b7516de9f48ca761249c185fcb022124d2
+    image: alpine:latest
+    command: chown -R 1000:1000 /var/jenkins_home
+    user: 1000:1000
+    labels:
+      com.amdocs.jenkins.role: "Volume Container"
