@@ -10,3 +10,17 @@ services:
         - no_proxy
     ports:
       - "9080:8080"
+    volumes:
+      - /usr/bin/docker:/usr/bin/docker
+      - /var/run/docker.sock:/var/run/docker.sock
+#  jenkins-java8-builder:
+#    build:
+#      context: ./jenkins-java8-builder
+#      args:
+#        - http_proxy
+#        - https_proxy
+#        - no_proxy
+#  jenkins-sprint-builder:
+#    extends:
+#      file: ../BASE-JAVA7/docker-compose.yml
+#      service: ant

@@ -6,7 +6,7 @@ COPY p4 /usr/local/bin/
 # plugins to be installed
 USER root
 RUN chmod 755 /tmp/install_jenkins_plugins.sh 
-RUN /tmp/install_jenkins_plugins.sh ldap workflow-aggregator job-dsl git matrix-auth p4
+RUN /tmp/install_jenkins_plugins.sh ldap workflow-aggregator job-dsl git matrix-auth p4 docker-plugin docker-workflow ant
 USER jenkins
 # scripts to be run on every start of jenkins
 COPY init_scripts/ /usr/share/jenkins/ref/init.groovy.d/
@@ -27,4 +27,4 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN chmod  700 /usr/share/jenkins/ref/.ssh && chmod 600 /usr/share/jenkins/ref/.ssh/* && chown -R jenkins:jenkins /usr/share/jenkins/ref/.ssh
 
 # lower user level to jenkins
-USER jenkins
+#USER jenkins
